@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_g0zd4k4lpkmg3nmi.css" >
+    
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg"></div>
+
+      <div class="cover">
+        <img src="/assets/images/cover.jpeg"/>
+      </div>
+
+      <div class="desc">
+        <button type="button" id="btn-control" class="btn-control">
+          <i id="btn-control-icon"></i>
+        </button>
+        <p class="title">Imperfect</p>
+        <p class="singer">周柏豪</p>
+      </div>
+
+      <div id="progress" class="progress">
+        <span class="bar bar-bg"></span>
+        <span id="progress-bar" class="bar bar-now"></span>
+      </div>
+
+      <div class="time">
+        <span id="starttime" class="time-ing"></span>
+        <span id="endtime" class="time-end"></span>
+      </div>
+
+      <div class="lrc" id="lrc">
+        <p class="lrc-top"></p>
+        <!-- <p class="active">撒打算打算的撒打算打算萨达萨达萨达萨达阿斯顿阿斯顿</p>
+        <p>撒打算打算的撒打算打算萨</p>
+        <p>撒打算打算的撒打算打算萨</p>
+        <p>撒打算打算的撒打算打算萨算的撒打算打算萨</p>
+        <p>撒打算打算的撒打算打算萨</p>
+        <p>撒打算打算的撒打算打算萨算的撒打算打算萨</p> -->
+      </div>
+
+      <audio id="player" src="/assets/Imperfect.mp3">
+
+      </audio>
+    </div>
+  </body>
+
+  
+  <script src="scripts/app.js"></script>
+</html>
